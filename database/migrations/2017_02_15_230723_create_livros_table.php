@@ -17,6 +17,8 @@ class CreateLivrosTable extends Migration
             $table->increments('id');
 
             $table->string('titulo');
+            $table->decimal('preco');
+            $table->integer('editora_id');
 
             $table->timestamps();
         });
