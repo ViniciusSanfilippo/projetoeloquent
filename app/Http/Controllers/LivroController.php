@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Livro;
+use App\Livro; //Livro esta em uma pagina diferente de controllers
 
 class LivroController extends Controller
 {

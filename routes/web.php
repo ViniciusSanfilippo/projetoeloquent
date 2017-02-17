@@ -18,7 +18,12 @@ Route::get('/', function () {
 // Rota para url '/editoras'
 Route::get('/editoras', 'EditoraController@index');
 
+//rota formulario Influencia a ORDEM
+Route::get('/editoras/formulario','EditoraController@formulario');
+
 // Rota para url 'editoras/1', por exemplo
 Route::get('/editoras/{editora}', 'EditoraController@show');
 
 Route::get('/livros', 'LivroController@index');
+
+Route::post('/editoras', 'EditoraController@armazena');

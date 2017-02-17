@@ -22,4 +22,15 @@ class EditoraController extends Controller
       return view('editora.show', compact('editora'));
 
     }
+    public function formulario()
+    {
+      return view('editora.formulario');
+    }
+    public function armazena()
+    {
+      //dd(request()->all());
+      Editora::create(request()->all());
+
+      return redirect('/editoras');
+    }
 }

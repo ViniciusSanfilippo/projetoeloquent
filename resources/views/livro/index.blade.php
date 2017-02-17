@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -27,7 +29,8 @@
                   <tr>
                     <th>Id</th>
                     <th>Titulo</th>
-                    <th>Preco</th>                    
+                    <th>Preco</th>
+                    <th>Editora</th>
                   </tr>
               </thead>
               <tbody>
@@ -42,7 +45,10 @@
                   <td>
                      {{$livro->preco}}
                   </td>
-                </td>
+                  <td>
+                     {{$livro->editora->nome}}
+                  </td>
+                  </td>
               </tr>
               @endforeach
             </tbody>
